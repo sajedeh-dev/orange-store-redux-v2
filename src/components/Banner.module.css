@@ -1,0 +1,53 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FCECDD;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 2rem auto;
+  max-width: 1200px;
+  height: 300px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  flex: 1;
+  padding: 2rem;
+  position: relative;
+}
+
+.left h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.left p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #F3A26D;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+
+
+
+.right {
+  flex: 1;
+  background-image: url("/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
