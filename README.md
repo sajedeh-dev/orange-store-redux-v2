@@ -55,6 +55,7 @@ A clean, modern e-commerce React app featuring a Home page, Redux Toolkit for gl
 - React Icons
 
 ---
+➡️This project is currently being improved...
 
 ## 🚀 Getting Started
 
