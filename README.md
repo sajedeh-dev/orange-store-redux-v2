@@ -2,7 +2,7 @@
 
 A clean, modern e-commerce React app featuring a Home page, Redux Toolkit for global state, smart shopping cart, and dynamic product pages — now with persistent cart data via `localStorage`.
 
-🔗 **Live Demo:** Not ready yet
+🔗 **Live Demo:** 
     Not ready yet
 
 ---
