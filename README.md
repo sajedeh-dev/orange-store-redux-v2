@@ -3,7 +3,8 @@
 A clean, modern e-commerce React app featuring a Home page, Redux Toolkit for global state, smart shopping cart, and dynamic product pages — now with persistent cart data via `localStorage`.
 
 🔗 **Live Demo:** 
-    Not ready yet
+    Check out the live version of this project deployed on Vercel:  
+    [[https://crypto-app-delta-black.vercel.app/](https://crypto-app-delta-black.vercel.app/)](https://vercel.com/sajedeh-devs-projects/orange-store-redux-v2)
 
 ---
 
