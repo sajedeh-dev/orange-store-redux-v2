@@ -1,31 +1,63 @@
+.container {
+  position: relative;
+  text-align: center;
+   
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+}
+.title{
+  font-size: 2rem;
+  color: #fe5d42;
+  margin-bottom: 2rem;
+}
 .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FCECDD;
   border-radius: 12px;
   overflow: hidden;
-  margin: 2rem auto;
   max-width: 1200px;
-  height: 300px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  border-left: 2px dashed #FF7601; 
+  border-top: 2px dashed #FF7601;
+
+}
+.sale{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 20;
+  left: -100px;
+  top: 40px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #FCECDD;
+}
+.sale h1 {
+  font-size: 1.5rem;
+  color: #FF7601;
+  font-weight: bold;
 }
 
 .left {
-  flex: 1;
+  
   padding: 2rem;
-  position: relative;
+  
 }
 
 .left h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: #FF7601;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .left p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #444;
+  font-weight: 700;
 }
 
 .button {
@@ -45,8 +77,7 @@
 
 
 .right {
-  flex: 1;
-  background-image: url("/banner.jpg");
+  padding: 2rem;
   background-size: cover;
   background-position: center;
   height: 100%;

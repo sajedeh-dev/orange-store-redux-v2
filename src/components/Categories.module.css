@@ -5,7 +5,7 @@
 }
 
 .title {
-  font-size: 1rem;
+  font-size: 2rem;
   color: #fe5d42;
   margin-bottom: 2rem;
 }
@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .card {
