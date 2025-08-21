@@ -6,6 +6,7 @@
   top: 0;
   z-index: 1000;
   border-radius: 8px;
+ 
   /* border-style: dashed;
   border-color: #fe5d42; */
 }
@@ -94,6 +95,11 @@
   padding: 2rem 1rem 1rem;
   margin-top: 4rem;
   border-radius: 8px;
+  
+  bottom: 0;
+  
+  
+
 }
 
 .footerContainer {
