@@ -42,7 +42,7 @@ A clean, modern e-commerce React app featuring a Home page, Redux Toolkit for gl
   Organized and maintainable codebase
 
 - **📱 Responsive Design**  
-  Optimized for desktop screens
+  Optimized for desktop screens and mobile
 
 ---
 
@@ -52,7 +52,7 @@ A clean, modern e-commerce React app featuring a Home page, Redux Toolkit for gl
 - Redux Toolkit  
 - React Router DOM  
 - Axios  
-- CSS  
+- CSS -> update to Tailwind css  
 - Fake Store API  
 - React Icons
 
