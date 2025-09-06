@@ -1,6 +1,6 @@
 import { categories } from "../constants/list";
 import { Link } from "react-router-dom";
-import styles from "./Categories.module.css";
+
 
 import electronicsImg from "../assets/elec.jpg";
 import jeweleryImg from "../assets/jer.jpg";
@@ -18,18 +18,18 @@ const categoryImages = {
 
 function Categories() {
   return (
-    <section className={styles.section}>
-      <h2 className={styles.title}>✨Shop by Category✨</h2>
-      <div className={styles.grid}>
+    <section className=" mt-20">
+      <h2  className=" text-4xl text-orange-500 font-bold text-center mb-12">✨Shop by Category✨</h2>
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-8">
         {categories
           .filter(cat => cat.type !== "all") 
           .map((cat) => (
-            <div key={cat.id} className={styles.card}>
-              <img src={categoryImages[cat.type]} alt={cat.type} />
-              <h3>{cat.type}</h3>
+            <div key={cat.id} className="border-3 border-dashed rounded-xl border-orange-500 flex flex-col gap-4 items-center py-8 ">
+              <img className="h-[160px] w-[160px] rounded-xl" src={categoryImages[cat.type]} alt={cat.type} />
+              <h3 className=" text-2xl text-orange-500 font-bold">{cat.type}</h3>
               <Link
                 to={`/products?category=${encodeURIComponent(cat.type)}`}
-                className={styles.btn}
+                className=" border-3 rounded-xl border-dashed border-orange-500 hover:bg-orange-200 transition-all px-4 py-3"
               >
                 View Products
               </Link>

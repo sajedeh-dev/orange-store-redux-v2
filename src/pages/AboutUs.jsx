@@ -1,10 +1,10 @@
-import AboutPartone from "../components/AboutPartone";
-import AboutParttree from "../components/AboutParttree";
-import AboutParttwo from "../components/AboutParttwo";
+import AboutPartone from "../components/modules/AboutPartone";
+import AboutParttree from "../components/modules/AboutParttree";
+import AboutParttwo from "../components/modules/AboutParttwo";
 
 function AboutUs() {
   return (
-    <div>
+    <div className=" flex flex-col gap-8">
       <AboutPartone/>
       <AboutParttwo/>
       <AboutParttree/>

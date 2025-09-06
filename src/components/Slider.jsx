@@ -22,8 +22,8 @@ import "swiper/css";
 
 function Slider() {
   return (
-    <>
-      <h1 className={styles.title}>✨Trending products✨</h1>
+    <section className="mt-20">
+      <h1 className=" text-4xl text-orange-500 font-bold text-center mb-12">✨Trending products✨</h1>
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -55,7 +55,7 @@ function Slider() {
         </SwiperSlide>
         ...
       </Swiper>
-    </>
+    </section>
   );
 }
 

@@ -1,60 +1,17 @@
-import { Link , useLocation } from "react-router-dom";
-import { HiOutlineShoppingCart } from "react-icons/hi2";
+import { Link,  } from "react-router-dom";
 import { FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa6";
-import { CgProfile } from "react-icons/cg";
 import styles from "./Layout.module.css";
+import Header from "./Header";
 import { useSelector } from "react-redux";
 
 function Layout({ children }) {
   const cart = useSelector((store) => store.cart);
-  const location = useLocation();
-  const currentPath = location.pathname;
+  
 
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.headerContainer}>
-          <div className={styles.logo}>
-            <Link to="/">OrangeStore🍊</Link>
-          </div>
-
-          <nav className={styles.nav}>
-            <Link to="/" className={currentPath === "/" ? styles.active : ""}>
-              Home
-            </Link>
-            <Link
-              to="/products"
-              className={currentPath === "/products" ? styles.active : ""}
-            >
-              Products
-            </Link>
-            <Link
-              to="/about"
-              className={currentPath === "/about" ? styles.active : ""}
-            >
-              About Us
-            </Link>
-            <Link
-              to="/contact"
-              className={currentPath === "/contact" ? styles.active : ""}
-            >
-              Contact Us
-            </Link>
-          </nav>
-
-          <div className={styles.userActions}>
-            <Link to="/checkout" className={styles.cart}>
-              <HiOutlineShoppingCart size={24} />
-              {!!cart.itemsCounter && (
-                <span className={styles.badge}>{cart.itemsCounter}</span>
-              )}
-            </Link>
-            <Link to="/profile" className={styles.profile}>
-              <CgProfile size={24} />
-            </Link>
-          </div>
-        </div>
-      </header>
+    <Header  cart={cart}/>
+      
 
       <main>{children}</main>
 
