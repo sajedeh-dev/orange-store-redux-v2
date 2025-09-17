@@ -12,7 +12,7 @@ import {
 import { fetchProducts } from "../features/product/productSlice";
 
 
-import styles from "./ProductsPage.module.css";
+
 import SearchBox from "../components/SearchBox";
 import Sidebar from "../components/Sidebar";
 
@@ -47,10 +47,10 @@ function ProductsPage() {
   }, [query]);
 
   return (
-    <>
-      <SearchBox search={search} setSearch={setSearch} setQuery={setQuery} />
-      <div className={styles.container}>
-        <div className={styles.products}>
+    <section className="mt-20">
+      <SearchBox  search={search} setSearch={setSearch} setQuery={setQuery} />
+      <div className="flex">
+        <div className="flex flex-wrap justify-around">
           {loading && <Loader />}
           {displyed.map((p) => (
             <Card key={p.id} data={p} />
@@ -58,7 +58,7 @@ function ProductsPage() {
         </div>
         <Sidebar query={query} setQuery={setQuery} />
       </div>
-    </>
+    </section>
   );
 }
 

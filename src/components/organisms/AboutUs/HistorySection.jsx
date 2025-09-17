@@ -1,6 +1,6 @@
 
 
-function AboutParttwo() {
+function HistorySection() {
   return (
     <section className=" p-8" >
       <div className="flex flex-col gap-4 md:gap-8 " >
@@ -17,4 +17,4 @@ function AboutParttwo() {
   );
 }
 
-export default AboutParttwo;
+export default HistorySection;

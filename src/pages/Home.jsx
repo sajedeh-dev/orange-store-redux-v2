@@ -1,17 +1,17 @@
 // pages/Home.jsx
-import Hero from '../components/Hero';
-import Categories from "../components/Categories";
-import Banner from "../components/Banner";
-import Testimonial from "../components/Testimonial";
-import Slider from "../components/Slider"
+import Hero from "../components/organisms/Landing/Hero";
+import Categories from "../components/organisms/Landing/Categories";
+import Slider from "../components/Slider";
+import Banner from "../components/organisms/Landing/Banner";
+import Testimonial from "../components/organisms/Landing/Testimonial";
 
 const Home = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-16 md:mt-16">
       <Hero />
       <Categories />
-      <Slider/>
-      <Banner />
+      <Slider />
+      <Banner/>
       <Testimonial />
       {/* بخش‌های بعدی اینجا اضافه میشن */}
     </div>

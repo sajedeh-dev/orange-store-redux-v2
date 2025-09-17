@@ -1,11 +1,11 @@
-import treeImage from "../../assets/tree.jpg";
-import towImage from "../../assets/two.jpg";
-import fourImage from "../../assets/four.jpg";
-import oneImage from "../../assets/one.jpg";
+import treeImage from "../../../assets/tree.jpg";
+import towImage from "../../../assets/two.jpg";
+import fourImage from "../../../assets/four.jpg";
+import oneImage from "../../../assets/one.jpg";
 
 
 
-function AboutPartone() {
+function InterduceSection() {
   return (
     <section className="bg-[#FCECDD] rounded-3xl px-4 mt-16" >
       <div className=" py-4 " >
@@ -26,4 +26,4 @@ function AboutPartone() {
   );
 }
 
-export default AboutPartone;
+export default InterduceSection;

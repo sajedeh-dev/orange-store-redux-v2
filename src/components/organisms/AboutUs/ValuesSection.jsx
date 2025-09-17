@@ -1,6 +1,6 @@
-import userabout from "../../assets/user-about.png";
+import userabout from "../../../assets/user-about.png";
 
-function AboutParttree() {
+function ValuesSection() {
   return (
     <section>
       <div className=" grid grid-cols-1 md:grid-cols-2 items-center gap-8  ">
@@ -46,4 +46,4 @@ function AboutParttree() {
   );
 }
 
-export default AboutParttree;
+export default ValuesSection;

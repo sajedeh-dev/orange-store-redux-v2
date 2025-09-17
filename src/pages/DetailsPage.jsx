@@ -3,7 +3,7 @@ import Loader from "../components/Loader";
 import { IoMdPricetag } from "react-icons/io";
 import { FaArrowLeft } from "react-icons/fa";
 import { SiOpenproject } from "react-icons/si";
-import styles from "./DetailsPage.module.css"
+
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../features/product/productSlice";
@@ -20,23 +20,23 @@ function DetailsPage() {
   if (!productDetails) return <Loader />;
 
   return (
-    <div className={styles.container}>
-      <img src={productDetails.image} alt="productDetails.title" />
-      <div className={styles.information}>
-        <h3 className={styles.title}>{productDetails.title}</h3>
-        <p className={styles.description}>{productDetails.description}</p>
-        <p className={styles.category}>
-          <SiOpenproject />
+    <div className="mt-20 grid grid-cols-1 gap-4 ml-8 md:ml-0 md:flex md:items-start md:justify-between md:gap-6 ">
+      <img className=" bg-white border-2 border-dashed border-orange-600  rounded-2xl px-16 py-8 w-96" src={productDetails.image} alt="productDetails.title" />
+      <div className="w-full p-20  bg-white border-2 border-dashed border-orange-600 rounded-2xl ">
+        <h3 className="text-orange-600 text-2xl mb-10">{productDetails.title}</h3>
+        <p className="text-gray-600  text-xl mb-10">{productDetails.description}</p>
+        <p className="mb-5 flex items-center gap-4 text-lg font-medium">
+          <SiOpenproject className="mb-3" />
           {productDetails.category}
         </p>
-        <div>
-          <span className={styles.price}>
+        <div className="flex items-center justify-between  ">
+          <span className=" flex items-center gap-4 text-lg font-medium">
             <IoMdPricetag />
             {productDetails.price}$
           </span>
-          <Link to="/products">
-            <FaArrowLeft />
-            <span>back to shop</span>
+          <Link to="/products" className=" flex items-center gap-3 bg-orange-400 px-4 py-3 rounded-xl  ">
+            <FaArrowLeft className="text-white" />
+            <span className="text-white text-lg font-medium ">back to shop</span>
           </Link>
         </div>
       </div>
