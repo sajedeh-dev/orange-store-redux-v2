@@ -1,7 +1,7 @@
 // pages/Home.jsx
 import Hero from "../components/organisms/Landing/Hero";
 import Categories from "../components/organisms/Landing/Categories";
-import Slider from "../components/Slider";
+import Slider from "../components/organisms/Landing/Slider";
 import Banner from "../components/organisms/Landing/Banner";
 import Testimonial from "../components/organisms/Landing/Testimonial";
 
@@ -13,7 +13,7 @@ const Home = () => {
       <Slider />
       <Banner/>
       <Testimonial />
-      {/* بخش‌های بعدی اینجا اضافه میشن */}
+      
     </div>
   );
 };
