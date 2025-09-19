@@ -1,6 +1,6 @@
 import HistorySection from "../components/organisms/AboutUs/HistorySection";
 import InterduceSection from "../components/organisms/AboutUs/InterduceSection";
-import TeamSection from "../components/organisms/AboutUs/teamSection";
+import TeamSection from "../components/organisms/AboutUs/TeamSection";
 import ValuesSection from "../components/organisms/AboutUs/ValuesSection";
 
 
