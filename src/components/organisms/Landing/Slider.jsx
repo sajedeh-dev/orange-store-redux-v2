@@ -30,10 +30,7 @@ function Slider() {
         pagination={{ clickable: true }}
       >
         {[elec, jer, men, women, jer, jer].map((img, index) => (
-          <SwiperSlide
-            key={index}
-            className="flex items-center justify-center"
-          >
+          <SwiperSlide key={index} className="flex items-center justify-center">
             <img
               src={img}
               alt={`slide-${index}`}
