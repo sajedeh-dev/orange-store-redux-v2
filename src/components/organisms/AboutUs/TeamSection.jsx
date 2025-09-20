@@ -1,29 +1,61 @@
-import user1 from "../../../assets/s3.jpg"
+import user1 from "../../../assets/s3.jpg";
+import user2 from "../../../assets/s4.jpg";
+import user3 from "../../../assets/s5.jpg";
+
+const teamMembers = [
+  {
+    id: 1,
+    image: user1,
+    title: "Frontend Developer",
+    description:
+      "Building responsive user interfaces with React and Tailwind, focusing on smooth user experience.",
+  },
+  {
+    id: 2,
+    image: user2,
+    title: "Backend Developer",
+    description:
+      "Designing and implementing secure, scalable APIs using Node.js and Express.",
+  },
+  {
+    id: 3,
+    image: user3,
+    title: "UI/UX Designer",
+    description:
+      "Creating minimal and user-friendly designs following modern UX principles.",
+  },
+];
 
 function TeamSection() {
   return (
-    <div className="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl">
-  <div className="md:flex">
-    <div className="md:shrink-0">
-      <img
-        className="h-48 w-full object-cover md:h-full md:w-48"
-        src={user1}
-        alt="Modern building architecture"
-      />
+    <section>
+      <h2 className=" text-orange-400  font-bold text-3xl text-center mb-8">Team Work</h2>
+    <div className="mx-auto max-w-4xl space-y-6 mb-20 ">
+      {teamMembers.map((member) => (
+        <div
+          key={member.id}
+          className="mx-auto max-w-md border-2 border-orange-500 border-dashed overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl"
+        >
+          <div className="md:flex">
+            <div className="md:shrink-0">
+              <img
+                className="h-48 w-full object-cover md:h-full md:w-48"
+                src={member.image}
+                alt={member.title}
+              />
+            </div>
+            <div className="p-8">
+              <div className="text-sm font-semibold tracking-wide text-indigo-500 uppercase">
+                {member.title}
+              </div>
+              <p className="mt-2 text-gray-500">{member.description}</p>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
-    <div className="p-8">
-      <div className="text-sm font-semibold tracking-wide text-indigo-500 uppercase">Company retreats</div>
-      <a href="#" className="mt-1 block text-lg leading-tight font-medium text-black hover:underline">
-        Incredible accommodation for your team
-      </a>
-      <p className="mt-2 text-gray-500">
-        Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of
-        places to do just that.
-      </p>
-    </div>
-  </div>
-</div>
-  )
+    </section>
+  );
 }
 
-export default TeamSection
+export default TeamSection;

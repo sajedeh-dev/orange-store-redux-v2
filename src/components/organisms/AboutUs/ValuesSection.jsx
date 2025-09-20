@@ -37,8 +37,8 @@ function ValuesSection() {
         </div>
         {/* right */}
         <div className="mx-auto">
-          <div className="bg-[#FCECDD] w-[340px] h-[420px] rounded-2xl  border-dashed border-r-3 border-orange-500 border-t-3 flex justify-center items-center">
-            <img className="w-[240px] h-[340px]" src={userabout} alt="" />
+          <div className="bg-[#FCECDD] w-[300px] h-[400px] rounded-2xl  border-dashed border-r-3 border-orange-500 border-t-3 flex justify-center items-center">
+            <img className="w-[200px] h-[300px]" src={userabout} alt="" />
           </div>
         </div>
       </div>
