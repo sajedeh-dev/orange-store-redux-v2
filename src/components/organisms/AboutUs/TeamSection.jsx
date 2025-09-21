@@ -24,13 +24,14 @@ const teamMembers = [
     description:
       "Creating minimal and user-friendly designs following modern UX principles.",
   },
+ 
 ];
 
 function TeamSection() {
   return (
     <section>
-      <h2 className=" text-orange-400  font-bold text-3xl text-center mb-8">Team Work</h2>
-    <div className="mx-auto max-w-4xl space-y-6 mb-20 ">
+      <h2 className=" text-orange-400  font-bold text-3xl text-center md:text-left mb-10">Team Work</h2>
+    <div className="mx-auto max-w-xl px-8  space-y-6 mb-20 ">
       {teamMembers.map((member) => (
         <div
           key={member.id}

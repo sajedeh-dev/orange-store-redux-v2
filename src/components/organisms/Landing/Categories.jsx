@@ -15,7 +15,7 @@ const categoryImages = {
 
 function Categories() {
   return (
-    <section className=" mt-20">
+    <section className=" ">
       <h2 className="text-xl md:text-4xl text-orange-500 font-bold text-center mb-12">
         ✨Shop by Category✨
       </h2>

@@ -1,15 +1,12 @@
 import image from "../../../assets/banner.png";
 
-
-
-
 const Banner = () => {
   return (
-    
-   
     <section className="relative text-center px-4 py-12 bg-[#f9f9f9]">
       {/* title */}
-      <h2 className="text-xl md:text-4xl text-orange-500 font-bold text-center mb-12">✨On Sale✨</h2>
+      <h2 className="text-xl md:text-4xl text-orange-500 font-bold text-center mb-12">
+        ✨On Sale✨
+      </h2>
 
       {/* sale badge */}
       <div className="absolute md:left-[-90px] md:top-10 left-[-5px] top-[60px] w-30 h-30 md:w-48 md:h-48 rounded-full bg-[#FCECDD] flex items-center justify-center z-20">

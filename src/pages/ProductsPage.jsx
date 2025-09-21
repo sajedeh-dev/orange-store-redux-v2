@@ -47,16 +47,17 @@ function ProductsPage() {
   }, [query]);
 
   return (
-    <section className="mt-20">
+    <section className="mt-20 grid grid-cols-1">
       <SearchBox  search={search} setSearch={setSearch} setQuery={setQuery} />
-      <div className="flex">
+      <div className="grid grid-cols-1 md:flex">
+        <Sidebar query={query} setQuery={setQuery} />
         <div className="flex flex-wrap justify-around">
           {loading && <Loader />}
           {displyed.map((p) => (
             <Card key={p.id} data={p} />
           ))}
         </div>
-        <Sidebar query={query} setQuery={setQuery} />
+        
       </div>
     </section>
   );

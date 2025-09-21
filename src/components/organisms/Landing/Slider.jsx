@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 
 function Slider() {
   return (
-    <section className="mt-20 px-4 md:px-8">
+    <section className=" px-4 md:px-8">
       <h1 className="text-xl md:text-4xl text-orange-500 font-bold text-center mb-12">
         ✨ Trending products ✨
       </h1>
