@@ -3,9 +3,9 @@ import userabout from "../../../assets/user-about.png";
 function ValuesSection() {
   return (
     <section>
-      <div className=" grid grid-cols-1 md:grid-cols-2 items-center gap-8  ">
+      <div className=" grid grid-cols-1 md:grid-cols-2 rounded-2xl items-center gap-8 bg-[#FCECDD] border-l-2 border-t-2 border-orange-500 border-dashed ">
         {/* left */}
-        <div className=" flex flex-col p-5 gap-8 ">
+        <div className=" flex flex-col p-8 gap-8 ">
           <div className=" flex flex-col gap-10">
             <h1 className="text-orange-400  font-bold text-3xl text-left">
               Why choose us
@@ -36,8 +36,8 @@ function ValuesSection() {
           
         </div>
         {/* right */}
-        <div className="mx-auto">
-          <div className="bg-[#FCECDD] w-[300px] h-[400px] rounded-2xl  border-dashed border-r-3 border-orange-500 border-t-3 flex justify-center items-center">
+        <div className="mx-auto p-8">
+          <div className=" w-[260px] h-[350px] rounded-2xl  border-dashed border-r-2 border-orange-500 border-t-2 flex justify-center items-center">
             <img className="w-[200px] h-[300px]" src={userabout} alt="" />
           </div>
         </div>
