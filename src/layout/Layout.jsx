@@ -7,9 +7,9 @@ function Layout({ children }) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header cart={cart} />
+      <Header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50" cart={cart} />
 
-      <main className="flex-grow">{children}</main>
+      <main className="flex-grow relative z-0">{children}</main>
 
       <Footer />
     </div>
